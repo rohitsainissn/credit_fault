@@ -1,0 +1,205 @@
+model_selection:
+    model:
+      XGBClassifier:
+        search_param_grid:
+          learning_rate: 
+           - 0.1
+           - 0.01
+           - 0.001
+<<<<<<< HEAD
+           
+=======
+>>>>>>> f8db4db (first commit)
+          max_depth: 
+           - 3
+           - 5
+           - 7
+<<<<<<< HEAD
+          
+=======
+>>>>>>> f8db4db (first commit)
+          n_estimators: 
+           - 100
+           - 200
+           - 300
+<<<<<<< HEAD
+          
+=======
+>>>>>>> f8db4db (first commit)
+          gamma: 
+           - 0
+           - 0.1
+           - 0.2
+          
+<<<<<<< HEAD
+          
+=======
+>>>>>>> f8db4db (first commit)
+      GradientBoostingClassifier:
+        search_param_grid:
+          n_estimators:
+           - 100
+          criterion:
+           - friedman_mse
+
+<<<<<<< HEAD
+      SVC:
+=======
+      svm_classifier:
+>>>>>>> f8db4db (first commit)
+        search_param_grid:
+          C: 
+           - 0.1
+           - 1
+           - 10
+          kernel: 
+           - linear
+           - rbf
+          gamma: 
+           - 0.1
+           - 0.01
+           - 0.001
+
+<<<<<<< HEAD
+=======
+      random_forest:
+        search_param_grid:
+          n_estimators: 
+           - 100
+           - 200
+           - 300
+          max_depth: 
+           - None
+           - 5
+           - 10
+          min_samples_split: 
+           - 2
+           - 5
+           - 10
+          min_samples_leaf: 
+           - 1
+           - 2
+           - 4
+
+      logistic_regression:
+        search_param_grid:
+          penalty:
+           - l1
+           - l2
+           - elasticnet
+          C: 
+           - 0.1
+           - 1
+           - 10
+
+      decision_tree:
+        search_param_grid:
+          criterion:
+           - gini
+           - entropy
+          max_depth: 
+           - None
+           - 5
+           - 10
+          min_samples_split: 
+           - 2
+           - 5
+           - 10
+          min_samples_leaf: 
+           - 1
+           - 2
+           - 4
+
+>>>>>>> f8db4db (first commit)
+      RandomForestClassifier:
+        search_param_grid:
+          n_estimators: 
+           - 100
+           - 200
+           - 300
+          max_depth: 
+           - None
+           - 5
+           - 10
+          min_samples_split: 
+           - 2
+           - 5
+           - 10
+          min_samples_leaf: 
+           - 1
+           - 2
+<<<<<<< HEAD
+           - 4
+=======
+           - 4
+
+      SVMClassifier:
+        search_param_grid:
+          C: 
+           - 0.1
+           - 1
+           - 10
+          kernel: 
+           - linear
+           - rbf
+          gamma: 
+           - 0.1
+           - 0.01
+           - 0.001
+
+      knn_classifier:
+        search_param_grid:
+          n_neighbors:
+           - 3
+           - 5
+           - 7
+          weights:
+           - uniform
+           - distance
+          algorithm:
+           - auto
+           - ball_tree
+           - kd_tree
+           - brute
+
+      naive_bayes:
+        search_param_grid:
+          var_smoothing:
+           - 1e-9
+           - 1e-8
+           - 1e-7
+
+      xgboost_classifier:
+        search_param_grid:
+          learning_rate: 
+           - 0.1
+           - 0.01
+           - 0.001
+          max_depth: 
+           - 3
+           - 5
+           - 7
+          n_estimators: 
+           - 100
+           - 200
+           - 300
+          gamma: 
+           - 0
+           - 0.1
+           - 0.2
+
+      mlp_classifier:
+        search_param_grid:
+          hidden_layer_sizes:
+           - (100,)
+           - (50, 50)
+           - (30, 20, 10)
+          activation:
+           - relu
+           - tanh
+           - logistic
+          alpha:
+           - 0.0001
+           - 0.001
+           - 0.01
+>>>>>>> f8db4db (first commit)
