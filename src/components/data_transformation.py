@@ -49,11 +49,7 @@ class DataTransformation:
         """
         try:
             data = pd.read_csv(feature_store_file_path)
-<<<<<<< HEAD
-            data.rename(columns={"Good/Bad": TARGET_COLUMN}, inplace=True)
-=======
             #data.rename(columns={"Good/Bad": TARGET_COLUMN}, inplace=True)
->>>>>>> f8db4db (first commit)
 
 
             return data
@@ -105,12 +101,8 @@ class DataTransformation:
             
             
             X = dataframe.drop(columns= TARGET_COLUMN)
-<<<<<<< HEAD
-            y = np.where(dataframe[TARGET_COLUMN]==-1,0, 1)  #replacing the -1 with 0 for model training
-=======
             y=dataframe[TARGET_COLUMN]
             #y = np.where(dataframe[TARGET_COLUMN]==-1,0, 1)  #replacing the -1 with 0 for model training
->>>>>>> f8db4db (first commit)
             
             
             X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.2 )

@@ -6,35 +6,19 @@ model_selection:
            - 0.1
            - 0.01
            - 0.001
-<<<<<<< HEAD
-           
-=======
->>>>>>> f8db4db (first commit)
           max_depth: 
            - 3
            - 5
            - 7
-<<<<<<< HEAD
-          
-=======
->>>>>>> f8db4db (first commit)
           n_estimators: 
            - 100
            - 200
            - 300
-<<<<<<< HEAD
-          
-=======
->>>>>>> f8db4db (first commit)
           gamma: 
            - 0
            - 0.1
            - 0.2
           
-<<<<<<< HEAD
-          
-=======
->>>>>>> f8db4db (first commit)
       GradientBoostingClassifier:
         search_param_grid:
           n_estimators:
@@ -42,11 +26,7 @@ model_selection:
           criterion:
            - friedman_mse
 
-<<<<<<< HEAD
-      SVC:
-=======
       svm_classifier:
->>>>>>> f8db4db (first commit)
         search_param_grid:
           C: 
            - 0.1
@@ -60,8 +40,6 @@ model_selection:
            - 0.01
            - 0.001
 
-<<<<<<< HEAD
-=======
       random_forest:
         search_param_grid:
           n_estimators: 
@@ -110,7 +88,6 @@ model_selection:
            - 2
            - 4
 
->>>>>>> f8db4db (first commit)
       RandomForestClassifier:
         search_param_grid:
           n_estimators: 
@@ -128,9 +105,6 @@ model_selection:
           min_samples_leaf: 
            - 1
            - 2
-<<<<<<< HEAD
-           - 4
-=======
            - 4
 
       SVMClassifier:
@@ -202,4 +176,3 @@ model_selection:
            - 0.0001
            - 0.001
            - 0.01
->>>>>>> f8db4db (first commit)

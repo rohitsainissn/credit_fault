@@ -6,10 +6,6 @@ import numpy as np
 from sklearn.metrics import accuracy_score
 
 from xgboost import XGBClassifier
-<<<<<<< HEAD
-from sklearn.svm import SVC
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-=======
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
@@ -17,7 +13,6 @@ from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.neural_network import MLPClassifier
->>>>>>> f8db4db (first commit)
 from sklearn.model_selection import GridSearchCV, train_test_split
 from src.constant import *
 from src.exception import CustomException
@@ -45,12 +40,6 @@ class ModelTrainer:
         self.utils = MainUtils()
 
         self.models = {
-<<<<<<< HEAD
-                        'XGBClassifier': XGBClassifier(),
-                        'GradientBoostingClassifier' : GradientBoostingClassifier(),
-                        'SVC' : SVC(),
-                        'RandomForestClassifier': RandomForestClassifier()
-=======
                         'logistic_regression' : LogisticRegression(),
                         'decision_tree' : DecisionTreeClassifier(),
                         'random_forest' : RandomForestClassifier(),
@@ -60,7 +49,6 @@ class ModelTrainer:
                         'xgboost_classifier' : XGBClassifier(),
                         'mlp_classifier' : MLPClassifier()
 
->>>>>>> f8db4db (first commit)
                         }
 
     
@@ -177,16 +165,6 @@ class ModelTrainer:
 
             logging.info(f"Extracting model config file path")
 
-<<<<<<< HEAD
-
-            
-
-
-
-            logging.info(f"Extracting model config file path")
-
-=======
->>>>>>> f8db4db (first commit)
             model_report: dict = self.evaluate_models(X=x_train, y=y_train, models=self.models)
 
             ## To get best model score from dict
@@ -239,10 +217,6 @@ class ModelTrainer:
 
             
 
-<<<<<<< HEAD
-            
-=======
->>>>>>> f8db4db (first commit)
 
         except Exception as e:
             raise CustomException(e, sys)

@@ -11,11 +11,6 @@ from src.utils.main_utils import MainUtils
 from dataclasses import dataclass
 
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> f8db4db (first commit)
 @dataclass
 class DataIngestionConfig:
     artifact_folder: str = os.path.join(artifact_folder)
@@ -70,11 +65,7 @@ class DataIngestion:
 
             logging.info(f"Saving exported data into feature store file path: {raw_file_path}")
         
-<<<<<<< HEAD
-            feature_store_file_path = os.path.join(raw_file_path,'wafer_fault.csv')
-=======
             feature_store_file_path = os.path.join(raw_file_path,'credit_fault.csv')
->>>>>>> f8db4db (first commit)
             sensor_data.to_csv(feature_store_file_path,index=False)
            
 
